@@ -38,8 +38,8 @@ void FCFS()
     tat[0] = bt[0];
     for(i=1; i<n; i++) 
     {
-        wt[i] = wt[i-1] + bt[i-1]; //waiting time[p] = waiting time[p-1] + Burst Time[p-1];
-        tat[i] = wt[i] + bt[i]; //Turnaround Time = Waiting Time + Burst Time
+        wt[i] = wt[i-1] + bt[i-1];
+        tat[i] = wt[i] + bt[i]; 
     }
     for(i=0; i<n; i++) 
     {
