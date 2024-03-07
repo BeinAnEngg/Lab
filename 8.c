@@ -20,7 +20,7 @@ void create()
     temp = (struct node *)malloc(sizeof(struct node));
     temp->prev = NULL;
     temp->next = NULL;
-    printf("\n Enter ssn, name, department, designation, salary and phno of employee: ");
+    printf("\n Enter SSN name department designation salary and phno of employee: ");
     scanf("%d %s %s %s %f %d", &ssn, name, dept, desg, &sal, &phno);
     temp->ssn = ssn;
     strcpy(temp->name, name);
@@ -76,7 +76,7 @@ void displaybeg() {
         printf("%d %s %s %s %f %d\n", temp2->ssn, temp2->name, temp2->dept, temp2->desg, temp2->sal, temp2->phno);
         temp2 = temp2->next;
     }
-    printf(" No of employees = %d ", count);
+    printf(" No of employees %d ", count);
 }
 
 int deleteend() {
@@ -117,12 +117,12 @@ void main() {
     temp = temp1 = NULL;
 
     printf("-----------------MENU--------------------\n");
-    printf("\n 1 – create a DLL of n emp");
+    printf("\n 1 – Create  DLL ");
     printf("\n 2 - Display from beginning");
     printf("\n 3 - Insert at end");
-    printf("\n 4 - delete at end");
-    printf("\n 5 - Insert at beg");
-    printf("\n 6 - delete at beg");
+    printf("\n 4 - Delete at end");
+    printf("\n 5 - Insert at beginning");
+    printf("\n 6 - Delete at beginning");
     printf("\n 7 - exit\n");
     printf("------------------------------------------\n");
 
