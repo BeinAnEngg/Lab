@@ -123,13 +123,13 @@ void main()
     first = NULL;
     temp = temp1 = NULL;
     printf("-----------------MENU----------------------\n");
-    printf("\n 1 - create a SLL of n emp");
+    printf("\n 1 - Create SLL");
     printf("\n 2 - Display from beginning");
     printf("\n 3 - Insert at end");
-    printf("\n 4 - delete at end");
-    printf("\n 5 - Insert at beg");
-    printf("\n 6 - delete at beg");
-    printf("\n 7 - exit\n");
+    printf("\n 4 - Delete at end");
+    printf("\n 5 - Insert at beginning");
+    printf("\n 6 - Delete at beginning");
+    printf("\n 7 - Exit\n");
     printf("-------------------------------------------\n");
     while (1) 
     {
@@ -160,7 +160,7 @@ void main()
             case 7:
                 exit(0);
             default:
-                printf("wrong choice\n");
+                printf("Invalid Input\n");
         }
     }
 }
