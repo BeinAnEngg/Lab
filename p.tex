@@ -1,0 +1,27 @@
+%5. Document with a Table
+
+\documentclass{article}
+
+\title{Document with a Table}
+\author{JSSATEB}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\begin{table}[h!]
+    \centering
+    \begin{tabular}{|c|c|c|c|c|c|}
+        \hline
+        S.No & USN & Student Name & Subject1 & Subject2 & Subject3 \\
+        \hline
+        1 & 4XX22XX001 & Name 1 & 89 & 60 & 90 \\
+        2 & 4XX22XX002 & Name 2 & 78 & 45 & 98 \\
+        3 & 4XX22XX003 & Name 3 & 67 & 55 & 59 \\
+        \hline
+    \end{tabular}
+    \caption{Student Marks Table}
+    \label{tab:marks}
+\end{table}
+
+\end{document}
